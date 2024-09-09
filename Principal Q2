@@ -11,13 +11,11 @@ namespace Questao2
         public double Real { get; private set; }
         public double Imaginario { get; private set; }
 
-
         public NumComplexo(double real, double imaginario)
         {
             Real = real;
             Imaginario = imaginario;
         }
-
 
         public NumComplexo Soma(NumComplexo outro)
         {
@@ -32,18 +30,15 @@ namespace Questao2
             return new NumComplexo(realParte, imaginarioParte);
         }
 
-
         public double Modulo()
         {
             return Math.Sqrt(Math.Pow(Real, 2) + Math.Pow(Imaginario, 2));
         }
 
-
         public double Argumento()
         {
             return Math.Atan2(Imaginario, Real);
         }
-
 
         public void ImprimeFormaPolar()
         {
